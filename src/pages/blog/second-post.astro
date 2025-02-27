@@ -1,0 +1,105 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export const frontmatter = {
+  title: 'The Evolution of Justice',
+  description: 'Crime and Punishment: The Evolution of Justice',
+  date: '2024-08-13',
+};
+---
+
+<Layout title={frontmatter.title}>
+  <main>
+    <article>
+      <header>
+        <h1>{frontmatter.title}</h1>
+        <p class="date">{frontmatter.date}</p>
+        <p class="description">{frontmatter.description}</p>
+      </header>
+
+      <section class="content">
+        <p>
+          In the digital era, justice is undergoing a profound transformation. The internet has not only changed the way we communicate but also how we perceive and enforce laws. From cybercrime to online privacy, the challenges are evolving rapidly, requiring a reevaluation of traditional justice systems.      
+        </p>
+          <p>
+            In ancient times, punishment was often harsh and public, serving as a deterrent through fear. Crimes were frequently met with corporal punishment, exile, or even death, with little consideration for the circumstances or the possibility of rehabilitation. The focus was on retribution—inflicting pain or suffering on the offender as payback for their actions. </p>
+            <p>
+            Cybercrime: As criminals exploit digital platforms for illegal activities, law enforcement agencies are developing new strategies and technologies to combat these crimes. The rise of ransomware, data breaches, and online fraud highlights the need for updated legal frameworks and advanced cybersecurity measures. <p>
+              
+              <p>In modern times, the criminal justice system in many parts of the world reflects a balance between these different approaches. While punishment is still a key component, there is also a greater emphasis on understanding the root causes of criminal behavior, such as poverty, education, and mental health issues. Rehabilitation programs, community service, and restorative justice practices are increasingly seen as effective ways to address crime, reduce recidivism, and promote social harmony. </p>
+          <p>
+            Online Privacy: With the proliferation of personal data online, privacy concerns have become a critical issue. The debate over data protection laws and user rights is more pertinent than ever, emphasizing the need for robust regulations and ethical standards in handling digital information.   
+          </p>
+
+          </section>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  :root {
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --accent-color: #007acc;
+    --header-font: 'Arial', sans-serif;
+    --body-font: 'Georgia', serif;
+  }
+
+  main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-family: var(--header-font);
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .date {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    font-size: 1.125rem;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+
+  @media (max-width: 768px) {
+    main {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .content p {
+      font-size: 0.875rem;
+    }
+  }
+</style>
